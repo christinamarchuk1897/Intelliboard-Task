@@ -210,11 +210,18 @@
                 margin-left: 0
                 width: 228px
                 padding: 11px 0 0 21px
+                .main-content__title, .main-content__total, .main-content__count, .main-content__title
+                    font-family: Segoe UI, sans-serif
+                    color: rgba(0, 0, 0, 1)
+                .main-content__count
+
                 .main-content__total
                     padding-left: 0
             &:nth-child(2)
                 background-color: rgba(18, 60, 225, 1)
                 padding: 12px 0 0 22px
+                .main-content__count
+                    margin: 18px 0 29px 0
             &:nth-child(3)
                 background-color: rgba(100, 214, 11, 1)
                 margin-left: 51px
@@ -222,12 +229,18 @@
                 .main-content__title
                     padding-left: 0
                     margin-right: 5px
+                    position: relative
+                    width: 100%
+                    span
+                        position: absolute
+                        top: 7px
                 .main-content__icon
-                    padding-left: 0
-                    img
-                        padding: 4px 0 0 9px
+                    display: inline-flex
+                    justify-content: center
+                    margin-right: -10px
+                    
                 .main-content__count
-                        margin: 31px 0 25px -1px
+                    margin: 20px 0 25px -1px
                 .main-content__total
                     padding-left: 18px
                 
@@ -240,13 +253,13 @@
             line-height: 21px
             padding-left: 11px
             span
-                padding-left: 21px
-                vertical-align: sub
+                padding-left: 24px
+
         &__count
             font-weight: bold
             font-size: 36px
             line-height: 26px
-            margin: 18px 0 29px 0
+            margin: 20px 0 29px 0
         &__total
             background: rgba(255, 255, 255, 0.2)
             border-radius: 30px
@@ -475,7 +488,6 @@
                 padding-bottom: 7px  
             .special-title
                 width: 100px
-                letter-spacing: -0.35px
             &-filter
                 background: #ffffff
                 border: none
