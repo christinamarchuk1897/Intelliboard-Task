@@ -1,0 +1,111 @@
+@media ( max-width: 1439px )
+    .main
+        &-content
+            display: flex
+            flex-direction: column
+        .aside
+            display: inline-table
+        .main-header
+            display: flex
+            .main-header__title
+                margin-top: 17px
+            .main-header__dropdown
+                margin-top: 6px
+@media ( max-width: 825px )
+    .header
+        .header-nav
+            .header-nav__link
+                margin: 0
+                width: 75px
+        .dropdown
+            width: 30%
+    .main
+        .main-content
+            padding-top: 60px
+            .main-content__data-chart, .main-content__data-info
+                margin: 15px auto
+                padding: 0
+                width: 50%
+                
+            .main-content__data-first
+                width: 100%
+                height: 100%
+                .main-content__data-descr
+                    flex-direction: column
+            .main-content__data-secondary
+                width: 100%
+            .main-content__overview
+                .main-content__overview-info, .main-content__overview-maininfo
+                    padding: 0 10px 7px 10px
+                    flex-wrap: wrap
+                    justify-content: space-between
+                .main-content__overview-title
+                    margin: 0 15px 0 0
+                    width: auto
+            .main-content__cards
+                flex-direction: column
+                align-items: center
+                .main-content__card
+                    margin: 0 0 20px 0
+            .main-content__about
+                margin: 0 auto
+                width: 100%
+                .main-content__indicator
+                    img
+                        width: 100%
+    
+@media ( max-width: 767px )   
+    .header-mobile
+        display: flex
+        flex-direction: column
+        position: fixed
+        height: 100%
+        width: 60%
+        // left: -100%
+        transition: 0.5s all
+        justify-content: center
+        z-index: 5
+        padding: 0  
+        .dropdown
+            display: none
+        .header-label
+            display: none
+    .header-nav, .header-nav__links
+        flex-direction: column
+        .header-nav__link
+            margin: 0
+    .header-nav__admin
+        justify-content: center
+        margin: 0 auto
+        width: 100%
+    .hamburger
+        display: block
+    .main
+        .aside
+            display: none
+        .main-content
+            .main-content__overview
+                .main-content__overview-info, .main-content__overview-maininfo
+                    flex-wrap: wrap
+@media  ( max-width: 540px )
+    .main 
+        .main-content 
+            .main-content__overview 
+                .main-content__overview-info, .main-content__overview-maininfo
+                    justify-content: flex-start
+    
+@media ( max-width: 475px )
+    .main
+        .main-header
+            flex-direction: column
+            align-items: center
+            height: 21%
+            .main-header__dropdown
+                margin: 0 auto
+        .main-content
+            .main-content__data-sales 
+                padding: 5px 10px 0 10px
+            en
+        
+    
+    
